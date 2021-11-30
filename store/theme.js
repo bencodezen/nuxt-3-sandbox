@@ -1,7 +1,15 @@
 import { defineStore } from 'pinia'
+import { useUserStore } from '~/store/user'
 
-export const useTheme = defineStore('theme', {
+const userStore = useUserStore()
+
+export const useThemeStore = defineStore('theme', {
   state: () => ({
     name: 'theme-name'
-  })
+  }),
+  actions: {
+    setTheme() {
+      this.name += userStore.name
+    }
+  }
 })

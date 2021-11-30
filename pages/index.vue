@@ -1,6 +1,6 @@
 <script setup>
-import { useTheme } from '~/store/theme'
-const theme = useTheme()
+import { useThemeStore } from '~/store/theme'
+const theme = useThemeStore()
 </script>
 
 <template>
