@@ -9,6 +9,8 @@
     "nuxt3": "latest"
   },
   "dependencies": {
-    "date-fns": "^2.25.0"
+    "@pinia/nuxt": "^0.1.5",
+    "date-fns": "^2.25.0",
+    "pinia": "^2.0.4"
   }
 }
